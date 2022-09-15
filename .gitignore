@@ -1,3 +1,5 @@
 tutorial.txt
-node_modules/
-.env
+notes-backend/node_modules/
+notes-frontend/node_modules/
+notes-backend/.env
+notes-frontend/

@@ -1,14 +1,18 @@
+require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
-const app = express();
-const { graphqlHTTP } = require("express-graphql");
+const graphqlHTTP = require("express-graphql");
+
+const schema = require("./graphql/schema");
+const printSchemaFromBuild = require("./config/printSchema");
+
 const { setupDB } = require("./config/databaseConnection");
+const cors = require("cors");
+
+const app = express();
 
 setupDB((v) => console.log(v));
 
-const schema = {
-  // we will add this later
-};
+const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(
@@ -20,5 +24,6 @@ app.use(
   })
 );
 
-app.listen(4000);
+app.listen(port);
+printSchemaFromBuild(schema);
 console.log("SERVER: OK");

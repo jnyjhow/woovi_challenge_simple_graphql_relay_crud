@@ -2,7 +2,7 @@ const { printSchema } = require("graphql");
 const fs = require("fs");
 
 const printSchemaFromBuild = (schema) => {
-  fs.writeFile("./schema.graphql", printSchema(schema), function (err) {
+  fs.writeFile("../data/schema.graphql", printSchema(schema), function (err) {
     if (err) {
       return console.log(err);
     }

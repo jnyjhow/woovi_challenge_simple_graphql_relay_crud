@@ -1,12 +1,14 @@
 //funcao criada para auxiliar com create, delete e update das notas
 
 const { noteType } = require("../nodeTypes");
+
 const {
   GraphQLString,
   GraphQLBoolean,
   GraphQLInt,
   GraphQLID,
 } = require("graphql");
+
 const NoteService = require("../../services/NoteService");
 
 const CreateNoteMutation = {

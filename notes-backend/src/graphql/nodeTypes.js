@@ -1,5 +1,5 @@
 //funcao para criar o proprio tipo de dados de objeto graphql
-//no exemplo abaixo um tipo de nota com seu proprio id (_id) e conteudo (content)
+//no exemplo abaixo um tipo de anotacao com seu proprio id (_id) e conteudo (content)
 
 const { GraphQLObjectType, GraphQLID, GraphQLString } = require("graphql");
 

@@ -5,3 +5,5 @@
 ```
 cd simple_graphql_relay_curd
 ```
+
+As demais pasta são apenas teste que foram feitos com o efeito de aprendizado.

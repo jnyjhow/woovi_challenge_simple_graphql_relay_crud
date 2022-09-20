@@ -1,8 +1,6 @@
 import {
-  GraphQLBoolean,
   GraphQLID,
   GraphQLInt,
-  GraphQLList,
   GraphQLNonNull,
   GraphQLObjectType,
   GraphQLSchema,
@@ -18,7 +16,6 @@ import {
   globalIdField,
   mutationWithClientMutationId,
   nodeDefinitions,
-  toGlobalId,
 } from "graphql-relay";
 
 import {
@@ -29,7 +26,6 @@ import {
   getTodos,
   getUser,
   getViewer,
-  readTodos,
   removeTodo,
   renameTodo,
 } from "./database";

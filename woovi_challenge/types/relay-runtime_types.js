@@ -1,3 +1,7 @@
+/* eslint-disable flowtype/require-types-at-top */
+/* eslint-disable flowtype/no-weak-types */
+/* eslint-disable flowtype/no-types-missing-file-annotation */
+
 declare module 'relay-runtime' {
   declare export var ConnectionHandler: any;
   declare export var RecordSource: any;

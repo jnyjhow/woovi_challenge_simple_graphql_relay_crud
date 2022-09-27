@@ -21,7 +21,7 @@ Start a local server:
 yarn run start
 ```
 
-### Após isso, acessar o seguinte link:
+### After that, access the following link:
 
 ```
 http://localhost:3000/

@@ -1,3 +1,5 @@
+/* eslint-disable flowtype/require-parameter-type */
+
 export default ({body, title}) => {
   return `
       <!DOCTYPE html>
